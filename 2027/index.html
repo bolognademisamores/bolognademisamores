@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bologna de Mis Amores 2027 · Encuentro di Tango Argentino</title>
+<meta name="description" content="Bologna de Mis Amores: tre giorni di tango argentino a Bologna. Iscrizioni, DJ, programma e consigli sulla città.">
+<meta property="og:title" content="Bologna de Mis Amores 2027">
+<meta property="og:description" content="Encuentro di tango argentino · 3 giorni · Bologna">
+<meta property="og:image" content="img/banner.jpg">
+<link rel="icon" href="img/badge.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>.hero{--hero-img:url("img/banner.jpg")}</style>
+</head>
+<body>
+
+<header class="nav"><div class="wrap">
+  <a class="brand" href="#top"><img src="img/badge.png" alt="" onerror="this.style.display='none'">Bologna de Mis Amores</a>
+  <nav class="menu">
+    <a href="#iscrizioni">Iscrizioni</a>
+    <a href="#dj">DJ</a>
+    <a href="#location">Location</a>
+    <a href="#programma">Programma</a>
+    <a href="#citta">Bologna</a>
+    <a href="../">Edizioni</a>
+  </nav>
+</div></header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div>
+    <img class="badge" src="img/badge.png" alt="Bologna de Mis Amores" onerror="this.style.display='none'">
+    <div class="eyebrow">Encuentro di Tango Argentino · Edizione 2027</div>
+    <h1>Bologna <em>de Mis Amores</em></h1>
+    <p class="sub">[GG–GG MESE 2027] · Tre giorni di abrazo, musica e milonga · Bologna</p>
+    <a class="btn primary" href="#iscrizioni">Iscriviti ora</a>
+    <a class="btn ghost" href="#programma">Vedi il programma</a>
+
+    <div class="countdown" id="countdown" aria-live="polite">
+      <div><b id="cd-d">--</b><span>giorni</span></div>
+      <div><b id="cd-h">--</b><span>ore</span></div>
+      <div><b id="cd-m">--</b><span>minuti</span></div>
+      <div><b id="cd-s">--</b><span>secondi</span></div>
+    </div>
+    <p class="deadline-note">alla chiusura delle iscrizioni · <strong id="deadline-label">[DATA DEADLINE]</strong></p>
+  </div>
+</section>
+
+<!-- PRESENTAZIONE -->
+<section>
+  <div class="wrap">
+    <div class="section-title"><h2>L'encuentro</h2><div class="line"></div></div>
+    <p class="lead">[Scrivi qui 3–4 righe di presentazione: lo spirito dell'encuentro, a chi è rivolto, quante persone, cosa lo rende speciale. Esempio: tre giorni dedicati al tango da ballare, nel cuore di Bologna, con musicalizadores selezionati, pista in parquet e una città da vivere tra una tanda e l'altra.]</p>
+  </div>
+</section>
+
+<!-- ISCRIZIONI -->
+<section class="alt" id="iscrizioni">
+  <div class="wrap">
+    <div class="section-title"><h2>Iscrizioni</h2><div class="line"></div></div>
+    <p class="lead">Le iscrizioni chiudono il <strong id="deadline-inline">[DATA DEADLINE]</strong> o al raggiungimento dei posti disponibili.</p>
+
+    <div class="grid c3" style="margin-top:2.5rem">
+      <div class="card price"><div class="pad">
+        <span class="tag">Early bird</span>
+        <div class="amount">€ [XX]</div>
+        <ul><li>Fino al [DATA]</li><li>Tutte le milonghe</li><li>Pass completo 3 giorni</li></ul>
+      </div></div>
+      <div class="card price featured"><div class="pad">
+        <span class="tag">Standard</span>
+        <div class="amount">€ [XX]</div>
+        <ul><li>Fino alla deadline</li><li>Tutte le milonghe</li><li>Pass completo 3 giorni</li></ul>
+      </div></div>
+      <div class="card price"><div class="pad">
+        <span class="tag">Singola serata</span>
+        <div class="amount">€ [XX]</div>
+        <ul><li>Se disponibile</li><li>Una milonga a scelta</li><li>Acquisto in loco</li></ul>
+      </div></div>
+    </div>
+
+    <div class="form-box" id="form-box">
+      <!-- Sostituisci l'URL con quello del tuo Google Form (Invia > < > Incorpora HTML) -->
+      <iframe id="form-frame" src="https://docs.google.com/forms/d/e/INSERISCI_ID_FORM/viewform?embedded=true" title="Modulo di iscrizione" loading="lazy">Caricamento…</iframe>
+      <div class="closed" id="closed-msg">
+        <h3 style="font-family:var(--serif);font-size:1.8rem">Iscrizioni chiuse</h3>
+        <p style="color:var(--muted)">Grazie! Per eventuali posti ancora disponibili scrivici a <a href="mailto:info@example.com">info@example.com</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DJ -->
+<section id="dj">
+  <div class="wrap">
+    <div class="section-title"><h2>I DJ</h2><div class="line"></div></div>
+    <div class="grid c3">
+      <article class="card dj">
+        <div class="photo"><img src="img/dj1.jpg" alt="" onerror="this.replaceWith(document.createTextNode('♪'))"></div>
+        <div class="pad"><span class="tag">Venerdì · Sabato</span><h3>[Nome DJ 1]</h3><p style="color:var(--muted)">[Breve bio: provenienza, stile musicale, dove ha suonato.]</p></div>
+      </article>
+      <article class="card dj">
+        <div class="photo"><img src="img/dj2.jpg" alt="" onerror="this.replaceWith(document.createTextNode('♪'))"></div>
+        <div class="pad"><span class="tag">Sabato · Domenica</span><h3>[Nome DJ 2]</h3><p style="color:var(--muted)">[Breve bio.]</p></div>
+      </article>
+      <article class="card dj">
+        <div class="photo"><img src="img/dj3.jpg" alt="" onerror="this.replaceWith(document.createTextNode('♪'))"></div>
+        <div class="pad"><span class="tag">Domenica</span><h3>[Nome DJ 3]</h3><p style="color:var(--muted)">[Breve bio.]</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="alt" id="location">
+  <div class="wrap">
+    <div class="section-title"><h2>La location</h2><div class="line"></div></div>
+    <div class="grid c2" style="align-items:stretch">
+      <div>
+        <h3 style="font-family:var(--serif);font-size:2rem;margin-bottom:.6rem">[Nome della sala]</h3>
+        <p style="color:var(--muted)">[Indirizzo completo, Bologna]</p>
+        <p style="margin-top:1rem;color:var(--muted)">[Descrivi la sala: metri quadri della pista, parquet, aria condizionata, bar, parcheggio, accessibilità.]</p>
+        <p style="margin-top:1rem"><strong>Come arrivare</strong><br><span style="color:var(--muted)">[Treno / aeroporto / auto / bus: indicazioni sintetiche.]</span></p>
+        <p style="margin-top:1rem"><strong>Dove dormire</strong><br><span style="color:var(--muted)">[Hotel e B&amp;B consigliati o convenzionati.]</span></p>
+      </div>
+      <div class="map">
+        <!-- Sostituisci con l'embed di Google Maps o OpenStreetMap della tua sala -->
+        <iframe loading="lazy" title="Mappa"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=11.30%2C44.48%2C11.38%2C44.52&amp;layer=mapnik"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMMA -->
+<section id="programma">
+  <div class="wrap">
+    <div class="section-title"><h2>Programma</h2><div class="line"></div></div>
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-day="d1">Venerdì</button>
+      <button class="tab" data-day="d2">Sabato</button>
+      <button class="tab" data-day="d3">Domenica</button>
+    </div>
+
+    <div class="day active" id="d1"><div class="timeline">
+      <div class="event"><time>16:00</time><h4>Accoglienza e check-in</h4><p>Ritiro del pass e benvenuto.</p></div>
+      <div class="event"><time>21:30</time><h4>Milonga di apertura</h4><p>DJ [Nome] · fino alle 03:00</p></div>
+    </div></div>
+
+    <div class="day" id="d2"><div class="timeline">
+      <div class="event"><time>11:00</time><h4>Pratica / workshop opzionale</h4><p>[Descrizione]</p></div>
+      <div class="event"><time>16:00</time><h4>Milonga del pomeriggio</h4><p>DJ [Nome]</p></div>
+      <div class="event"><time>21:30</time><h4>Milonga di gala</h4><p>DJ [Nome] · fino alle 03:00</p></div>
+    </div></div>
+
+    <div class="day" id="d3"><div class="timeline">
+      <div class="event"><time>12:30</time><h4>Pranzo insieme</h4><p>[Dove / come]</p></div>
+      <div class="event"><time>16:00</time><h4>Milonga di chiusura</h4><p>DJ [Nome] · fino alle 23:00</p></div>
+    </div></div>
+  </div>
+</section>
+
+<!-- CITTÀ -->
+<section class="alt" id="citta">
+  <div class="wrap">
+    <div class="section-title"><h2>Cosa fare a Bologna</h2><div class="line"></div></div>
+    <div class="grid c3">
+      <article class="card city"><div class="img"><img src="img/citta1.jpg" alt="" onerror="this.remove()"></div><div class="pad"><span class="tag">Da vedere</span><h3>[Luogo]</h3><p style="color:var(--muted)">[Una riga di consiglio.]</p></div></article>
+      <article class="card city"><div class="img"><img src="img/citta2.jpg" alt="" onerror="this.remove()"></div><div class="pad"><span class="tag">Da mangiare</span><h3>[Locale / piatto]</h3><p style="color:var(--muted)">[Una riga di consiglio.]</p></div></article>
+      <article class="card city"><div class="img"><img src="img/citta3.jpg" alt="" onerror="this.remove()"></div><div class="pad"><span class="tag">Da vivere</span><h3>[Esperienza]</h3><p style="color:var(--muted)">[Una riga di consiglio.]</p></div></article>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <img src="img/badge.png" alt="" style="width:64px;height:64px;border-radius:50%;margin:0 auto 1rem;border:1px solid var(--gold)" onerror="this.style.display='none'">
+  <div>Bologna de Mis Amores · Edizione 2027</div>
+  <div class="editions"><a href="../">Tutte le edizioni</a><a href="mailto:info@example.com">Contatti</a><a href="#">Instagram</a><a href="#">Facebook</a></div>
+  <div>© 2027 · Organizzazione [Nome / ASD]</div>
+</footer>
+
+<script>
+/* ====== CONFIGURA QUI ====== */
+const DEADLINE = new Date("2027-07-31T23:59:00+02:00"); // deadline iscrizioni
+const DEADLINE_TEXT = "31 luglio 2027";
+/* =========================== */
+document.getElementById("deadline-label").textContent = DEADLINE_TEXT;
+document.getElementById("deadline-inline").textContent = DEADLINE_TEXT;
+
+function tick(){
+  const diff = DEADLINE - new Date();
+  if (diff <= 0){
+    ["d","h","m","s"].forEach(k => document.getElementById("cd-"+k).textContent = "0");
+    document.getElementById("form-frame").style.display = "none";
+    document.getElementById("closed-msg").style.display = "block";
+    return false;
+  }
+  const s = Math.floor(diff/1000);
+  document.getElementById("cd-d").textContent = Math.floor(s/86400);
+  document.getElementById("cd-h").textContent = Math.floor(s%86400/3600);
+  document.getElementById("cd-m").textContent = Math.floor(s%3600/60);
+  document.getElementById("cd-s").textContent = s%60;
+  return true;
+}
+if (tick()) setInterval(tick, 1000);
+
+document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => {
+  document.querySelectorAll(".tab").forEach(x => x.classList.remove("active"));
+  document.querySelectorAll(".day").forEach(x => x.classList.remove("active"));
+  t.classList.add("active");
+  document.getElementById(t.dataset.day).classList.add("active");
+}));
+</script>
+</body>
+</html>
