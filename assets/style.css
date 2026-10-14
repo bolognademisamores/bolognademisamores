@@ -20,7 +20,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;min-height:100%}
 [hidden]{display:none!important}
-body{min-height:100vh;background:linear-gradient(to bottom right,#9d6213,#e6d21d) no-repeat;color:var(--ink);font-family:var(--sans);line-height:1.65;font-size:17px}
+body{min-height:100vh;background:#1b2ab9;color:var(--ink);font-family:var(--sans);line-height:1.65;font-size:17px}
 img{max-width:100%;display:block}
 a{color:var(--magenta);text-decoration:none}
 a:hover{text-decoration:underline}
@@ -131,13 +131,14 @@ footer .editions{margin:1rem 0;display:flex;gap:1rem;justify-content:center;flex
 
 /* BANNER + REGISTRATION PILL */
 .reg-banner{max-height:55vh;margin:0 auto 2.5rem}
-.reg-pill{display:inline-block;margin-top:1rem;background:var(--magenta);color:#fff;padding:.35rem 1.1rem;border-radius:999px;font-weight:700;font-size:.9rem;letter-spacing:.02em}
+.reg-pill{display:inline-block;margin:1rem .25rem 0;background:var(--magenta);color:#fff;padding:.95rem 2rem;border-radius:999px;font-weight:700;font-size:1rem;letter-spacing:.04em;line-height:1.65}
 @media(max-width:480px){
   .countdown{gap:.45rem;flex-wrap:nowrap}
   .countdown div{min-width:0;flex:1;padding:.6rem .3rem}
   .countdown b{font-size:1.6rem}
   .countdown span{font-size:.58rem;letter-spacing:.08em}
   .btn{padding:.8rem 1.4rem}
+  .reg-pill{padding:.8rem 1.4rem}
 }
 
 /* DJ SLOTS, LOCATION, STAY, ABOUT */
@@ -184,3 +185,9 @@ footer .editions{margin:1rem 0;display:flex;gap:1rem;justify-content:center;flex
 .hotel-addr{margin:.2rem 0 .8rem}
 .city .img{aspect-ratio:16/10;background:linear-gradient(135deg,#d6126f,#ff7a1a 55%,#ffc928)}
 .city .img img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* sfondo blu: testi chiari fuori dai pannelli */
+.hero,.eyebrow,h1,.hero .dates,.hero p.sub,.section-title h2{color:#fff}
+h1 em{color:var(--yellow)}
+.section-title h2{text-shadow:0 2px 12px rgba(0,0,0,.25)}
+section.alt{background:rgba(255,255,255,.07)}
