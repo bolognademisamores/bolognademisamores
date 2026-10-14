@@ -2,10 +2,12 @@
 
 ## Struttura
 ```
-index.html            → home + archivio edizioni
+index.html            → home (italiano) + archivio edizioni
+en/index.html         → home (inglese)
 assets/style.css      → stile condiviso da tutte le edizioni
-2027/index.html       → edizione 2027
-2027/img/             → immagini dell'edizione
+2027/index.html       → edizione 2027 (italiano)
+en/2027/index.html    → edizione 2027 (inglese)
+2027/img/             → immagini dell'edizione (condivise dalle due lingue)
 ```
 
 ## Immagini da inserire in `2027/img/`
@@ -32,3 +34,8 @@ assets/style.css      → stile condiviso da tutte le edizioni
 trascina la cartella. Indirizzo: `nomescelto.pages.dev`.
 **GitHub Pages**: crea un repository, carica i file, Settings → Pages →
 Deploy from branch (main). Indirizzo: `utente.github.io/repo`.
+
+## Date e modulo (in fondo a 2027/index.html e en/2027/index.html)
+- EVENT_START: inizio encuentro (27 agosto 2027), usato dal conto alla rovescia.
+- REG_OPEN: apertura iscrizioni (10 novembre 2026). Prima di quel giorno il sito mostra l'annuncio; dopo, compaiono prezzi e modulo.
+- FORM_URL: incolla qui l'indirizzo del Google Form. Va cambiato in entrambe le lingue.
