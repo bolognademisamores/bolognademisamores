@@ -13,12 +13,12 @@ en/2027/index.html    → edizione 2027 (inglese)
 ## Immagini da inserire in `2027/img/`
 - `banner.jpg`  → il tuo banner (sfondo dell'hero)
 - `badge.png`   → l'immagine circolare/badge (logo, icona, footer)
-- opzionali: `dj1.jpg`, `dj2.jpg`, `dj3.jpg`, `citta1.jpg`, `citta2.jpg`, `citta3.jpg`
+- opzionali: `dj1.jpg`…`dj7.jpg`, `location1.jpg`…`location3.jpg`, `chisiamo1.jpg`…`chisiamo3.jpg`
+- foto "Visitare Bologna": `citta1.jpg` (Piazza Maggiore), `citta2.jpg` (Quadrilatero), `citta3.jpg` (Santo Stefano)
 
 ## Cosa modificare in `2027/index.html`
 1. Cerca tutto ciò che è tra `[parentesi quadre]` e sostituiscilo.
-2. In fondo al file, nello `<script>`, imposta `DEADLINE` e `DEADLINE_TEXT`.
-   Alla scadenza il modulo si nasconde da solo e compare "Iscrizioni chiuse".
+2. Nello `<script>` in fondo imposta `REG_OPEN` (apertura iscrizioni) e `FORM_URL` (link del Google Form).
 3. Iscrizioni: crea un Google Form → Invia → `< >` Incorpora HTML → copia
    l'URL dentro `src` dell'iframe `form-frame`.
 4. Mappa: Google Maps → Condividi → Incorpora una mappa → sostituisci `src`.
