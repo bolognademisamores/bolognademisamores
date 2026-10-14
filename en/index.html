@@ -4,35 +4,39 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Bologna de Mis Amores · Argentine Tango Encuentro</title>
-<meta name="description" content="Bologna de Mis Amores: a three-day Argentine tango encuentro in Bologna, 27-29 August 2027. Registration opens 10 November.">
+<meta name="description" content="Bologna de Mis Amores: a three-day Argentine tango encuentro in Bologna, 27-29 August 2027. Registration opens 7 January 2027.">
 <link rel="icon" href="../2027/img/badge.png">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
-<style>.hero{--hero-img:url("/2027/img/banner.jpg");min-height:100vh}</style>
 </head>
 <body>
 <section class="hero">
-  <div>
-    <div style="position:absolute;top:1rem;right:1.25rem"><a class="lang" href="../" hreflang="it">IT</a></div>
-    <img class="badge" src="../2027/img/badge.png" alt="Bologna de Mis Amores" onerror="this.style.display='none'">
+  <div style="position:absolute;top:1rem;right:1.25rem"><a class="lang" href="../" hreflang="it">IT</a></div>
+  <div class="hero-in">
+    <img class="banner" src="../2027/img/banner.jpg" alt="Bologna de Mis Amores" onerror="this.style.display='none'">
     <div class="eyebrow">Argentine Tango Encuentro</div>
     <h1>Bologna <em>de Mis Amores</em></h1>
     <div class="dates">27–29 August 2027</div>
     <p class="sub">Three days of tango in Bologna, every year.</p>
+    <p class="reg-pill" style="margin:0 0 1.5rem">Registration opens 7 January 2027, 9:30 PM</p>
     <a class="btn primary" href="2027/">2027 Edition · Find out more</a>
   </div>
 </section>
 
 <section class="alt">
   <div class="wrap">
-    <div class="section-title"><h2>Past and current editions</h2><div class="line"></div></div>
+    <div class="section-title"><h2>Past and current editions</h2><div class="line"></div><p class="reg-pill">Registration opens 7 January 2027, 9:30 PM</p></div>
     <div class="grid c3">
-      <a class="card" href="2027/"><div class="pad"><span class="tag">Current</span><h3>Edition 2027</h3><p style="color:var(--muted)">Programme, DJs, registration from 10 November.</p></div></a>
+      <a class="card" href="2027/"><div class="pad"><span class="tag">Current</span><h3>Edition 2027</h3><p style="color:var(--muted)">Programme, registration opens 7 January 2027, 9:30 PM.</p></div></a>
       <!-- Add a card like this for every new edition:
       <a class="card" href="2028/"><div class="pad"><span class="tag">2028</span><h3>Edition 2028</h3></div></a> -->
     </div>
   </div>
 </section>
 <footer><div>Bologna de Mis Amores</div></footer>
+<script>
+const REG_OPEN = new Date("2027-01-07T21:30:00+01:00");  // apertura iscrizioni / registration opens
+if (new Date() >= REG_OPEN) document.querySelectorAll(".reg-pill").forEach(e => e.hidden = true);
+</script>
 </body>
 </html>
