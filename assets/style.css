@@ -20,7 +20,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;min-height:100%}
 [hidden]{display:none!important}
-body{min-height:100vh;background:#ffc5ef;color:var(--ink);font-family:var(--sans);line-height:1.65;font-size:17px}
+body{min-height:100vh;background:transparent;color:var(--ink);font-family:var(--sans);line-height:1.65;font-size:17px}
 img{max-width:100%;display:block}
 a{color:var(--magenta);text-decoration:none}
 a:hover{text-decoration:underline}
@@ -191,3 +191,10 @@ footer .editions{margin:1rem 0;display:flex;gap:1rem;justify-content:center;flex
 h1 em{color:#a80a55}
 .section-title h2{text-shadow:none}
 section.alt{background:rgba(255,255,255,.4)}
+
+/* sfondo: foto in filigrana sotto un velo rosa #ffc5ef.
+   File: 2027/img/sfondo.jpg. Se manca, resta il rosa a tinta unita.
+   Per rendere la foto piu' visibile abbassa .94, per attenuarla alzalo (max 1). */
+html{background:#ffc5ef}
+body::before{content:"";position:fixed;inset:0;z-index:-1;
+  background:linear-gradient(rgba(255,197,239,.94),rgba(255,197,239,.94)),url("../2027/img/sfondo.jpg") center/cover no-repeat,#ffc5ef}
