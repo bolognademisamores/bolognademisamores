@@ -12,9 +12,10 @@
 html{background:#ffc5ef!important}body{background:transparent!important}
 .reg-pill{display:inline-block!important;margin:1rem .25rem 0!important;padding:.95rem 2rem!important;font-size:1rem!important;font-weight:700!important;letter-spacing:.04em!important;line-height:1.65!important;border-radius:999px!important;background:#d6126f!important;color:#fff!important}
 .hero,.eyebrow,h1,.hero .dates,.hero p.sub,.section-title h2{color:#26123a}
-.hero p.sub{margin:0 0 .2rem;font-size:1.3rem;letter-spacing:.12em}.hero .dates{margin:0 0 1.6rem}
+.hero p.sub{margin:.4rem 0 .6rem;font-size:clamp(1.7rem,5.2vw,2.8rem);letter-spacing:.06em;font-weight:600}
 h1,h1 em,.hero .dates{font-family:'Anek Bangla',sans-serif;font-weight:700;color:#0010e4;font-style:normal}
-.hero .dates{margin:0}
+.hero .dates{margin:0;font-size:clamp(2.1rem,6.4vw,3.6rem);line-height:1.2}
+.hero{min-height:100vh;min-height:100svh}
 @media(max-width:480px){.reg-pill{padding:.8rem 1.4rem!important}}
 </style>
 </head>
@@ -27,11 +28,11 @@ h1,h1 em,.hero .dates{font-family:'Anek Bangla',sans-serif;font-weight:700;color
     <p class="sub">Embrace Tango Encuentro</p>
     <div class="dates">27–29 August 2027</div>
     <div class="dates">Save the date!</div>
-    <p style="margin-top:1.4rem"><a class="btn primary" href="2027/">2027 Edition · Find out more</a></p>
+    <p style="margin-top:1.4rem" data-later hidden><a class="btn primary" href="2027/" tabindex="-1">2027 Edition · Find out more</a></p>
   </div>
 </section>
 
-<section class="alt">
+<section class="alt" data-later hidden>
   <div class="wrap">
     <div class="section-title"><h2>Past and current editions</h2><div class="line"></div></div>
     <div class="grid c3">
@@ -41,10 +42,14 @@ h1,h1 em,.hero .dates{font-family:'Anek Bangla',sans-serif;font-weight:700;color
     </div>
   </div>
 </section>
-<footer><div>Bologna de Mis Amores</div></footer>
+<footer data-later hidden><div>Bologna de Mis Amores</div></footer>
 <script>
-const REG_OPEN = new Date("2027-01-07T21:00:00+01:00");  // apertura iscrizioni / registration opens
-if (new Date() >= REG_OPEN) document.querySelectorAll(".reg-pill").forEach(e => e.hidden = true);
+/* ====== CONFIGURA QUI ======
+   false = la home mostra solo la copertina (archivio edizioni, pulsante e piè di pagina nascosti)
+   true  = mostra anche il pulsante "Edizione 2027", l'archivio edizioni e il piè di pagina */
+const SHOW_MORE = false;
+/* ============================ */
+if (SHOW_MORE) document.querySelectorAll("[data-later]").forEach(e => e.hidden = false);
 </script>
 </body>
 </html>
