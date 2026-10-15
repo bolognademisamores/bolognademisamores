@@ -6,14 +6,14 @@
 <title>Bologna de Mis Amores · Argentine Tango Encuentro</title>
 <meta name="description" content="Bologna de Mis Amores: an Argentine tango encuentro in San Lazzaro di Savena (Bologna), 27-29 August 2027. Registration opens 7 January 2027.">
 <link rel="icon" href="../2027/img/badge.png">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css?v=7">
+<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=8">
 <style>
 html{background:#ffc5ef!important}body{background:transparent!important}
 .reg-pill{display:inline-block!important;margin:1rem .25rem 0!important;padding:.95rem 2rem!important;font-size:1rem!important;font-weight:700!important;letter-spacing:.04em!important;line-height:1.65!important;border-radius:999px!important;background:#d6126f!important;color:#fff!important}
 .hero,.eyebrow,h1,.hero .dates,.hero p.sub,.section-title h2{color:#26123a}
 .hero p.sub{margin:0 0 .2rem;font-size:1.3rem;letter-spacing:.12em}.hero .dates{margin:0 0 1.6rem}
-h1 em{color:#a80a55}
+h1,h1 em{font-family:'Anek Bangla',sans-serif;font-weight:700;color:#0010e4;font-style:normal}
 @media(max-width:480px){.reg-pill{padding:.8rem 1.4rem!important}}
 </style>
 </head>
@@ -25,7 +25,7 @@ h1 em{color:#a80a55}
     <h1>Bologna <em>de Mis Amores</em></h1>
     <p class="sub">Tango Encuentro</p>
     <div class="dates">27–29 August 2027</div>
-    <p class="reg-pill" style="margin:0 0 1.5rem">Registration opens 7 January 2027, 9:30 PM</p>
+    <p class="reg-pill" style="margin:0 0 1.5rem">Registration opens 7 January 2027, 9:00 PM</p>
     <br><a class="btn primary" href="2027/">2027 Edition · Find out more</a>
   </div>
 </section>
@@ -34,7 +34,7 @@ h1 em{color:#a80a55}
   <div class="wrap">
     <div class="section-title"><h2>Past and current editions</h2><div class="line"></div></div>
     <div class="grid c3">
-      <a class="card" href="2027/"><div class="pad"><span class="tag">Current</span><h3>Edition 2027</h3><p style="color:var(--muted)">Programme, registration opens 7 January 2027, 9:30 PM.</p></div></a>
+      <a class="card" href="2027/"><div class="pad"><span class="tag">Current</span><h3>Edition 2027</h3><p style="color:var(--muted)">Programme, registration opens 7 January 2027, 9:00 PM.</p></div></a>
       <!-- Add a card like this for every new edition:
       <a class="card" href="2028/"><div class="pad"><span class="tag">2028</span><h3>Edition 2028</h3></div></a> -->
     </div>
@@ -42,7 +42,7 @@ h1 em{color:#a80a55}
 </section>
 <footer><div>Bologna de Mis Amores</div></footer>
 <script>
-const REG_OPEN = new Date("2027-01-07T21:30:00+01:00");  // apertura iscrizioni / registration opens
+const REG_OPEN = new Date("2027-01-07T21:00:00+01:00");  // apertura iscrizioni / registration opens
 if (new Date() >= REG_OPEN) document.querySelectorAll(".reg-pill").forEach(e => e.hidden = true);
 </script>
 </body>
